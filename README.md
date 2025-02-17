@@ -1,7 +1,12 @@
-# Online Shop for Hackathon Phase 1
+# Online Shop 🛍️ for Hackathon Phase 1
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-iemafzalhassan-blue?logo=github&style=flat)](https://github.com/iemafzalhassan)
+![Forks](https://img.shields.io/github/forks/iemafzalhassan/online_shop)
+[![Stars](https://img.shields.io/github/stars/iemafzalhassan/online_shop)](https://github.com/iemafzalhassan/online_shop)
+![GitHub last commit](https://img.shields.io/github/last-commit/iemafzalhassan/easyshop?color=red)
+<p align="center">
 
-Welcome to the **Online Shop** project – our hackathon entry for Phase 1! This repository contains a fully functional e-commerce application built to demonstrate your foundational DevOps skills in three key areas:
-
+Welcome to the **Online Shop** project – our hackathon entry for Phase 1! This repository contains a fully functional e-commerce application built to demonstrate foundational DevOps skills in three key areas:
 - **Git & GitHub**
 - **Linux**
 - **Docker**
@@ -19,15 +24,17 @@ In this phase, your focus is on understanding the provided developer code, revie
 ---
 
 ## Table of Contents
+- [Important Dates](#important-dates)
+- [Overview](#overview)
+- [Guidelines & Resources](#guidelines--resources)
+- [Tasks](#tasks)
+- [Submission Instructions](#submission-instructions)
+- [Submission Details for Your Repo README](#submission-details-for-your-repo-readme)
+- [Evaluation Criteria](#evaluation-criteria)
+- [License](#license)
+- [Contact](#contact)
 
-- [Overview](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
-- [Guidelines & Resources](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
-- [Tasks](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
-- [Submission Instructions](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
-- [Submission Details for Your Repo README](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
-- [Evaluation Criteria](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
-- [License](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
-- [Contact](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
+
 
 ---
 
@@ -47,8 +54,8 @@ Your task is to familiarize yourself with the code, make enhancements if necessa
 
 Before diving into the tasks, please review the following key resources:
 
-- [**CONTRIBUTING.md](https://www.notion.so/CONTRIBUTING.md):** Guidelines for code contributions, commit messages, and overall coding standards.
-- [**ROADMAP.md](https://www.notion.so/ROADMAP.md):** Insights into the project vision, future enhancements, and milestones.
+- [CONTRIBUTING.md](CONTRIBUTING.md): Guidelines for code contributions, commit messages, and overall coding standards.
+- [ROADMAP.md](ROADMAP.md): Insights into the project vision, future enhancements, and milestones.
 - **Repository Documentation:** Explore the repository to understand how the application is built. Pay special attention to the `src` directory where the main application logic resides, as well as configuration files such as `vite.config.js` and styling in `index.css`.
 
 These documents provide the context needed to understand the project requirements and the best practices expected for your contributions.
@@ -78,30 +85,30 @@ For this hackathon phase, your work will center around the following tasks:
 - **Code Readiness:** Ensure the codebase is structured in a way that aligns with Docker best practices, preparing it for eventual containerized deployment.
 
 ---
-
-## Submission Instructions
-
-When you have completed your work, please follow these steps for submission:
-
-1. **Review & Test Your Work:**
-    
-    Make sure all changes are committed and pushed to your GitHub repository (or branch). Test the application thoroughly to confirm that your enhancements do not break existing functionality.
-    
-2. **Prepare Your Submission:**
-    
-  -  Gather your full name, email address, and the URL to your GitHub repository (or the specific branch/commit that contains your work).
-  -  Make sure to add Demo video(which should be publically accessible) explaining your implementations for the project. This is the important aspect for evalution.
-    
-3. **Submit via Google Form:**
-    
-    Complete the submission form here:
-    
-    [Submit Your Work](https://docs.google.com/forms/d/e/1FAIpQLSdtOttzC9M__5ysJ_prVT1MtmV0qh1_PXrI5aYfd3zQNCF-CA/viewform?usp=header)
-    
-4. **Timely Submission:**
-    
-    Ensure that your submission is completed before the hackathon deadline. Late submissions will not be eligible for prizes.
-    
+> [!IMPORTANT]
+> ## Submission Instructions
+> 
+> When you have completed your work, please follow these steps for submission:
+>
+> 1. **Review & Test Your Work:**
+>    
+>    - Make sure all changes are committed and pushed to your GitHub repository (or branch). Test the application thoroughly to confirm that your enhancements do not break existing functionality.
+>    
+> 2. **Prepare Your Submission:**
+>    
+>    -  Gather your full name, email address, and the URL to your GitHub repository (or the specific branch/commit that contains your work).
+>    -  Make sure to add Demo video(which should be publically accessible) explaining your implementations for the project. This is the important aspect for evaluation.
+>    
+> 3. **Submit via Google Form:**
+>    
+>    - Complete the submission form here:
+>    
+>    [Submit Your Work](https://docs.google.com/forms/d/e/1FAIpQLSdtOttzC9M__5ysJ_prVT1MtmV0qh1_PXrI5aYfd3zQNCF-CA/viewform?usp=header)
+>    
+> 4. **Timely Submission:**
+>    
+>    - Ensure that your submission is completed before the hackathon deadline. Late submissions will not be eligible for prizes.
+>    
 
 ---
 
@@ -117,7 +124,7 @@ When submitting your repository link, your README must include:
     
   -  Describe the tasks you worked on. Detail how you managed your repository, the Linux commands or scripts you used, and any improvements or suggestions regarding Docker integration.
 
-> [!IMPORTANT]
+> [!NOTE]
 >
 >  -  Provide video demo link 
 
@@ -175,7 +182,7 @@ Submissions will be evaluated based on the following criteria:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://www.notion.so/LICENSE) file for details.
+This project is licensed under the MIT License. See the [MIT](LICENSE) file for details.
 
 ---
 
