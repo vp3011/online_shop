@@ -1,178 +1,191 @@
-# Online Shop 🛍️
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHub Profile](https://img.shields.io/badge/GitHub-iemafzalhassan-blue?logo=github&style=flat)](https://github.com/iemafzalhassan)
-![Forks](https://img.shields.io/github/forks/iemafzalhassan/online_shop)
-[![Stars](https://img.shields.io/github/stars/iemafzalhassan/online_shop)](https://github.com/iemafzalhassan/online_shop)
-![GitHub last commit](https://img.shields.io/github/last-commit/iemafzalhassan/easyshop?color=red)
-<p align="center">
+# Online Shop for Hackathon Phase 1
 
+Welcome to the **Online Shop** project – our hackathon entry for Phase 1! This repository contains a fully functional e-commerce application built to demonstrate your foundational DevOps skills in three key areas:
 
-A modern, responsive e-commerce platform built with React, featuring a sophisticated dark/light theme system and advanced product management.
+- **Git & GitHub**
+- **Linux**
+- **Docker**
 
+In this phase, your focus is on understanding the provided developer code, reviewing how these core topics are implemented, and making any necessary enhancements. When you're ready, you'll submit your work via our designated Google Form.
 
+---
 
+## Important Dates
 
-## 🌟 Features
+- **Hackathon Start Date:** 20th Feb, 9:00 AM
+- **Hackathon End Date:** 21st Feb, 9:00 AM
+- **Submission Deadline:** 24 hours after the repository link is shared
 
-- **Responsive Design**: Fully responsive UI that works seamlessly across all devices
-- **Theme System**: Sophisticated dark/light theme with smooth transitions
-- **Product Management**: 
-  - Advanced filtering and search capabilities
-  - Dynamic product loading with pagination
-  - Detailed product views with modal support
-- **Shopping Cart**: 
-  - Real-time cart updates
-  - Persistent cart state
-  - Quick checkout process
-- **Modern UI/UX**:
-  - Animated components
-  - Intuitive navigation
-  - Loading states and error handling
+---
 
-## 🚀 Quick Start
+## Table of Contents
 
-### Prerequisites
+- [Overview](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
+- [Guidelines & Resources](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
+- [Tasks](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
+- [Submission Instructions](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
+- [Submission Details for Your Repo README](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
+- [Evaluation Criteria](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
+- [License](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
+- [Contact](https://www.notion.so/Online-Shop-for-Hackathon-Phase-1-19c7311ab98080c0b992c865f2cb323e?pvs=21)
 
-- Node.js (v16 or higher)
-- npm
+---
 
-### Installation
+## Overview
 
-1. Clone the repository:
-```bash
-git clone https://github.com/iemafzalhassan/online-shop.git
-cd online-shop
-```
+The **Online Shop** project is a demo e-commerce application designed for Hackathon Phase 1. It serves as a platform to showcase best practices in code quality, development workflows, and system design with a focus on:
 
-2. Install dependencies:
-```bash
-npm install
-```
+- **Git & GitHub:** Effective version control, branching strategies, and collaborative workflows.
+- **Linux:** Command-line operations, system administration, and file management.
+- **Docker:** Principles of containerization and preparing code for deployment in a containerized environment.
 
-3. Start the development server:
-```bash
-npm run dev
-```
+Your task is to familiarize yourself with the code, make enhancements if necessary, and ensure your final submission reflects your understanding of these topics.
 
-4. Build for production:
-```bash
-npm run build
-```
+---
 
-## 🐳 Docker Support
+## Guidelines & Resources
 
-### Building the Docker Image
+Before diving into the tasks, please review the following key resources:
 
-```bash
-# Build the Docker image
-docker build -t online-shop .
-```
+- [**CONTRIBUTING.md](https://www.notion.so/CONTRIBUTING.md):** Guidelines for code contributions, commit messages, and overall coding standards.
+- [**ROADMAP.md](https://www.notion.so/ROADMAP.md):** Insights into the project vision, future enhancements, and milestones.
+- **Repository Documentation:** Explore the repository to understand how the application is built. Pay special attention to the `src` directory where the main application logic resides, as well as configuration files such as `vite.config.js` and styling in `index.css`.
 
-### Running the Container
+These documents provide the context needed to understand the project requirements and the best practices expected for your contributions.
 
-```bash
-# Run the container
-docker run -d -p 3000:3000 --name online-shop online-shop
-```
+---
 
-The application will be available at `http://localhost:3000`
+## Tasks
 
-### Docker Commands Reference
+For this hackathon phase, your work will center around the following tasks:
 
-- **Stop the container:**
-  ```bash
-  docker stop online-shop
-  ```
+### Git & GitHub
 
-- **Remove the container:**
-  ```bash
-  docker rm online-shop
-  ```
+- **Repository Management:** Fork and clone the repository, then create a new branch for your work. Ensure your commit history is clean and well-documented.
+- **Collaboration Practices:** Follow best practices for version control by making descriptive commits, creating pull requests, and engaging in code reviews.
+- **Workflow Optimization:** Identify any areas where the Git workflow can be improved and document your suggestions for future enhancements.
 
-- **View logs:**
-  ```bash
-  docker logs online-shop
-  ```
+### Linux
 
-## 🛠️ Tech Stack
+- **Command Line Proficiency:** Review the code for examples of Linux command usage. Test and verify that file operations, system scripts, and environment configurations are functioning as expected.
+- **System Administration:** Examine how the application handles Linux-based operations such as permissions, file management, and process monitoring. If you see room for improvement, implement those changes and document them.
+- **Documentation:** Clearly document any Linux-related enhancements you make, explaining how they optimize the project’s performance or usability.
 
-- **Frontend Framework**: React 18
-- **Styling**: 
-  - Custom CSS with CSS Variables
-- **State Management**: React Context API
-- **Icons**: Font Awesome
-- **Build Tool**: Vite
-- **Package Manager**: npm/yarn
+### Docker
 
-## 📦 Project Structure
+- **Containerization Principles:** Even though a Dockerfile is not provided in this repository, consider how you would package and deploy this application using Docker. Reflect on the design decisions that would facilitate containerization.
+- **Conceptual Improvements:** Propose any modifications or improvements that could make future Docker integration smoother. Document your suggestions clearly in your pull request.
+- **Code Readiness:** Ensure the codebase is structured in a way that aligns with Docker best practices, preparing it for eventual containerized deployment.
 
-```
-online-shop/
-├── src/
-│   ├── components/      # Reusable components
-│   ├── context/         # React Context providers
-│   ├── data/            # Mock data and constants
-│   ├── pages/           # Page components
-│   ├── utilities/       # Helper functions
-│   └── index.css        # Global styles
-├── public/              # Static assets
-└── package.json         # Project dependencies
-```
+---
 
-## 🤝 Contributing
+## Submission Instructions
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+When you have completed your work, please follow these steps for submission:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. **Review & Test Your Work:**
+    
+    Make sure all changes are committed and pushed to your GitHub repository (or branch). Test the application thoroughly to confirm that your enhancements do not break existing functionality.
+    
+2. **Prepare Your Submission:**
+    
+  -  Gather your full name, email address, and the URL to your GitHub repository (or the specific branch/commit that contains your work).
+  -  Make sure to add Demo video(which should be publically accessible) explaining your implementations for the project. This is the important aspect for evalution.
+    
+3. **Submit via Google Form:**
+    
+    Complete the submission form here:
+    
+    [Submit Your Work](https://docs.google.com/forms/d/e/1FAIpQLSdtOttzC9M__5ysJ_prVT1MtmV0qh1_PXrI5aYfd3zQNCF-CA/viewform?usp=header)
+    
+4. **Timely Submission:**
+    
+    Ensure that your submission is completed before the hackathon deadline. Late submissions will not be eligible for prizes.
+    
 
-## 📝 Development Guidelines
+---
 
-- Follow the existing code style and naming conventions
-- Write meaningful commit messages
-- Add appropriate comments for complex logic
-- Update documentation for significant changes
-- Add tests for new features
+## Submission Details for Your Repo README
 
-## 🔄 CI/CD Pipeline
+When submitting your repository link, your README must include:
 
-- GitHub Actions for automated testing and deployment
-- Automated version bumping
-- Docker containerization support
-- Automated dependency updates
+- **Project Title & Overview:**
+    
+    Clearly state the project name (e.g., "Online Shop – Hackathon Phase 1 Submission") and provide a brief overview of your solution, emphasizing how it addresses Git & GitHub, Linux, and Docker.
+    
+- **Task Descriptions & Implementations:**
+    
+  -  Describe the tasks you worked on. Detail how you managed your repository, the Linux commands or scripts you used, and any improvements or suggestions regarding Docker integration.
 
-## 📈 Future Roadmap
+> [!IMPORTANT]
+>
+>  -  Provide video demo link 
 
-See our detailed [ROADMAP.md](ROADMAP.md) for planned features and improvements.
+- **Key Changes & Enhancements:**
+    
+    Highlight the major changes or enhancements you made, including any refactoring, feature additions, or optimizations, along with documentation updates.
+    
+- **Final Submission Statement:**
+    
+    Include a clear declaration that this repository (or branch) represents your final submission for Hackathon Phase 1.
+    
+- **Version or Branch Information:**
+    
+    Specify which branch or commit should be reviewed (e.g., "Final submission branch: `final-phase1`").
+    
 
-Key upcoming features:
-- User authentication system
-- Product reviews and ratings
-- Admin dashboard improvements
-- Payment gateway integration
-- Performance optimizations
+Make sure this information is visible in your repository's README so that evaluators can easily review your work.
 
-## 📊 Monitoring & Telemetry
+---
 
-- Integration with OpenTelemetry for observability
-- Performance monitoring
-- Error tracking
-- User behavior analytics
+## Evaluation Criteria
 
+Submissions will be evaluated based on the following criteria:
 
-## 📄 License
+- **Adherence to Guidelines:**
+    
+    Your work should comply with the project’s coding standards, documentation, and contribution guidelines as described in this README and the [CONTRIBUTING.md](http://contributing.md/) file.
+    
+- **Git & GitHub Proficiency:**
+    
+    Evaluation of your version control practices, including branching strategy, commit quality, and pull request process.
+    
+- **Linux Competence:**
+    
+    Demonstrated ability to effectively use Linux for system administration tasks, scripting, and command-line operations within the project.
+    
+- **Docker Readiness:**
+    
+    Although a Dockerfile is not provided, your documentation and code structure should reflect an understanding of containerization best practices and readiness for future Docker integration.
+    
+- **Quality of Enhancements:**
+    
+    The significance and quality of your improvements, refactoring, and overall impact on the project’s functionality.
+    
+- **Documentation & Clarity:**
+    
+    Clear and concise documentation that explains your work, including details in your repository README about your tasks and changes.
+    
+- **Timeliness:**
+    
+    Your submission must be completed and submitted before the hackathon deadline.
+    
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
 
-## 🙏 Acknowledgments
+## License
 
-- React team for the amazing framework
-- Bootstrap team for the UI components
-- All our contributors and supporters
+This project is licensed under the MIT License. See the [LICENSE](https://www.notion.so/LICENSE) file for details.
 
-## 📞 Support
+---
 
-For support, email iemafzalhassan@gmail.com or join our [Discord channel](https://discord.gg/aVMWfSKA). 
+## Contact
+
+For any questions or further information, please contact:
+
+- **Email:** [iemafzalhassan@gmail.com](mailto:iemafzalhassan@gmail.com) , [amitabhdevops2024@gmail.com](mailto:iemafzalhassan@gmail.com) , [deveshagent@gmail.com](mailto:deveshagent@gmail.com)
+- Discord Server : https://discord.gg/cpucZHDc64
+
+---
+
+Happy coding, and good luck in the hackathon!

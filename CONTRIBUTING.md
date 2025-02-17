@@ -15,8 +15,6 @@ By participating in this project, you are expected to uphold our Code of Conduct
 5. Push to your fork
 6. Submit a Pull Request
 
-## Development Process 💻
-
 ### Prerequisites
 
 - Node.js (v16 or higher)
@@ -39,17 +37,6 @@ npm run dev
 yarn dev
 ```
 
-### Code Style Guidelines 📝
-
-- Follow the existing code style
-- Use meaningful variable and function names
-- Write comments for complex logic
-- Keep functions small and focused
-- Use TypeScript types appropriately
-- Follow React best practices
-
-### Commit Guidelines ✅
-
 We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
 
 - `feat:` - New features
@@ -71,78 +58,73 @@ git commit -m "feat: add user authentication system"
 2. Update the CHANGELOG.md following the existing format
 3. The PR will be merged once you have the sign-off of at least one maintainer
 
-### Testing 🧪
-
-- Write unit tests for new features
-- Ensure all tests pass before submitting PR
-- Update existing tests as needed
-- Add integration tests for complex features
-
-Run tests:
-```bash
-npm run test
-# or
-yarn test
-```
-
 ## Project Structure 📁
 
 ```
-online-shop/
-├── src/
-│   ├── components/    # Reusable components
-│   ├── context/       # React Context providers
-│   ├── data/          # Mock data and constants
-│   ├── pages/         # Page components
-│   ├── utilities/     # Helper functions
-│   └── index.css      # Global styles
-├── public/            # Static assets
-└── package.json       # Project dependencies
+.
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── ROADMAP.md
+├── eslint.config.js
+├── index.css
+├── index.html
+├── package-lock.json
+├── package.json
+├── public
+│   ├── OS.svg
+│   └── imgs
+│       ├── logo.png
+│       ├── logo.svg
+│       └── placeholder-image.png
+├── src
+│   ├── App.jsx
+│   ├── bootstrap-overrides.scss
+│   ├── components
+│   │   ├── CartItem.jsx
+│   │   ├── DeleteProductModal.jsx
+│   │   ├── Footer.jsx
+│   │   ├── InProgressToastContent.jsx
+│   │   ├── LoadingSpinner.jsx
+│   │   ├── Modals
+│   │   │   ├── CheckoutModal.jsx
+│   │   │   ├── DeleteProductModal.jsx
+│   │   │   ├── NewProductModal.jsx
+│   │   │   └── UpdateProductModal.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── ProductItem.jsx
+│   │   ├── SearchBar.jsx
+│   │   ├── ShoppingCart.jsx
+│   │   ├── Store.jsx
+│   │   ├── StoreItem.jsx
+│   │   ├── ThemeToggle.jsx
+│   │   └── UpdateProductModal.jsx
+│   ├── context
+│   │   ├── NavBarContext.jsx
+│   │   ├── ShoppingCartContext.jsx
+│   │   ├── ShoppingItemsContext.jsx
+│   │   └── ThemeContext.jsx
+│   ├── data
+│   │   ├── demoProducts.js
+│   │   └── productData.js
+│   ├── hooks
+│   │   └── useLocalStorage.js
+│   ├── index.css
+│   ├── main.jsx
+│   ├── pages
+│   │   ├── Admin.jsx
+│   │   ├── Checkout.jsx
+│   │   ├── Home.jsx
+│   │   └── Store.jsx
+│   ├── services
+│   │   └── db.js
+│   └── utilities
+│       └── formatCurrency.js
+└── vite.config.js
 ```
 
-## Documentation 📚
-
-- Comment your code when necessary
-- Update relevant documentation
-- Add JSDoc comments for functions
-- Keep README.md up to date
-- Document any new features
-
-## Issue Reporting 🐛
-
-### Bug Reports
-
-When filing a bug report, please include:
-
-- Detailed description of the issue
-- Steps to reproduce
-- Expected behavior
-- Actual behavior
-- Screenshots if applicable
-- Environment details
-
-### Feature Requests
-
-When proposing a new feature:
-
-- Explain the problem you're trying to solve
-- Suggest a possible solution
-- Be open to feedback and alternatives
-- Consider implementation complexity
-
 ## Community 👥
-
 - Join our [Discord server](https://discord.gg/aVMWfSKA)
-- Follow us on [Twitter](https://twitter.com/iemafzalhassan)
-
-## Recognition 🌟
-
-Contributors will be:
-
-- Listed in our README.md
-- Mentioned in release notes
-- Added to our contributors page
-- Given credit in documentation
 
 
 ## License 📄
