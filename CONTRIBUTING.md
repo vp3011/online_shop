@@ -22,6 +22,10 @@ By participating in this project, you are expected to uphold our Code of Conduct
 - Git
 
 ### Setting Up Development Environment
+```bash
+Port: 3000
+```
+
 
 1. Install dependencies:
 ```bash
