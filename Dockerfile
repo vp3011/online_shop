@@ -4,11 +4,11 @@ FROM node:18-alpine as builder
 # Set working directory
 WORKDIR /app
 
-# Install dependencies first (leveraging Docker layer caching)
+# Copy package.json
 COPY package*.json ./
 
-# Install production dependencies only
-RUN npm install --only=production
+# Install dependencies
+RUN npm install
 
 # Copy the rest of the application files
 COPY . .
@@ -22,7 +22,7 @@ FROM gcr.io/distroless/nodejs18-alpine
 # Set working directory
 WORKDIR /app
 
-# Copy built files from the builder stage
+# Copy only necessary files from builder stage
 COPY --from=builder /app /app
 
 # Expose port 3000 for the app
