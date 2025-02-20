@@ -126,7 +126,7 @@ When submitting your repository link, your README must include:
 
 > [!NOTE]
 >
->  -  Provide video demo link (3-5 minutes only, not more that 5 minutes)
+>  -  Provide video demo link (3-5 minutes only, not more than 5 minutes)
 
 - **Key Changes & Enhancements:**
     
