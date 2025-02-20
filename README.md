@@ -65,13 +65,13 @@ node_modules
 
 🐳 build an image & Running with Docker
 3️⃣ Build and Run the Container
-Step 1: Build the Docker Image
+- Step 1: Build the Docker Image
 docker build -t online-shop:latest .
-Step 2: List All Docker Images
+- Step 2: List All Docker Images
 docker images 
-Step 3: Run the Container
+- Step 3: Run the Container
 docker run -d -p 3000:3000 -- name online-shop-app online_shop:latest
-Step 4: Check Running Containers
+- Step 4: Check Running Containers
 docker ps
 4️⃣ Verify if the Container is Running
 docker ps
