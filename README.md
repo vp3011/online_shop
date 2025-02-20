@@ -82,7 +82,7 @@ For this hackathon phase, your work will center around the following tasks:
 
 - **Containerization Principles:** Even though a Dockerfile is not provided in this repository, consider how you would package and deploy this application using Docker. Reflect on the design decisions that would facilitate containerization.
 - **Conceptual Improvements:** Propose any modifications or improvements that could make future Docker integration smoother. Document your suggestions clearly in your pull request.
-- **Code Readiness:** Ensure the codebase is structured in a way that aligns with Docker best practices, preparing it for eventual containerized deployment.
+- **Code Readiness:** Ensure the codebase is structured in a way that aligns with Docker best practices, preparing it for eventual containerized deployment on AWS EC2 / Azure VM / Google Compute Engine (Your Choice of Cloud).
 
 ---
 > [!IMPORTANT]
@@ -97,7 +97,7 @@ For this hackathon phase, your work will center around the following tasks:
 > 2. **Prepare Your Submission:**
 >    
 >    -  Gather your full name, email address, and the URL to your GitHub repository (or the specific branch/commit that contains your work).
->    -  Make sure to add Demo video(which should be publically accessible) explaining your implementations for the project. This is the important aspect for evaluation.
+>    -  Make sure to add Demo video(which should be publically accessible) explaining your implementations for the project. This is the important aspect for evaluation. The Videos / Articles / Submissions should be submitted to the google form as well as shared on your LinkedIn/ twitter for extra points.
 >    
 > 3. **Submit via Google Form:**
 >    
@@ -195,4 +195,6 @@ For any questions or further information, please contact:
 
 ---
 
-Happy coding, and good luck for the hackathon!
+Good luck for the hackathon
+
+Happy Learning :)
