@@ -127,7 +127,7 @@ docker logs online-shop-app
    ```  
 2. **Create a feature branch:**  
    ```bash
-   git checkout -b feature/your-feature
+   git checkout -b phase-1
    ```  
 3. **Commit changes using Conventional Commits:**  
    ```bash
@@ -135,7 +135,7 @@ docker logs online-shop-app
    ```  
 4. **Push to your branch:**  
    ```bash
-   git push origin feature/your-feature
+   git push origin phase-1
    ```  
 5. **Create a Pull Request (PR) 🚀**  
 
