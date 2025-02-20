@@ -16,8 +16,8 @@ COPY . .
 # Build the project
 RUN npm run build
 
-# Stage 2: Use a lightweight Distroless Alpine base for the final image
-FROM gcr.io/distroless/nodejs18-alpine
+# Stage 2: Use a lightweight Distroless image for the final image
+FROM gcr.io/distroless/nodejs18
 
 # Set working directory
 WORKDIR /app
