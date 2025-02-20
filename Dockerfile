@@ -1,48 +1,35 @@
-#1st stage
+# Stage 1: Build using Node.js with Alpine
+FROM node:18-alpine as builder
 
-#Base image (OS)
-
-FROM node:18 as builder
-
-#Make working directory
-
+# Set working directory
 WORKDIR /app
 
-#Copy pakages file for the install pakages 
-
+# Install dependencies first (leveraging Docker layer caching)
 COPY package*.json ./
 
-#Run command to install package
+# Install production dependencies only
+RUN npm install --only=production
 
-RUN npm install
-
-#Copy the files
-
+# Copy the rest of the application files
 COPY . .
 
-#Command to build project
-
+# Build the project
 RUN npm run build
 
+# Stage 2: Use a lightweight Distroless Alpine base for the final image
+FROM gcr.io/distroless/nodejs18-alpine
 
-#2nd stage
-
-#Use distroless image of nodejs for less image size
-
-FROM gcr.io/distroless/nodejs18-debian12
-
-#Create working directory for stage 2
-
+# Set working directory
 WORKDIR /app
 
-#Copy files from builder
-
+# Copy built files from the builder stage
 COPY --from=builder /app /app
 
-#Expose port 3000
-
+# Expose port 3000 for the app
 EXPOSE 3000
 
-#Command to run application
+# Run as a non-root user for better security
+USER node
 
-CMD ["node_modules/vite/bin/vite.js", "--host", "0.0.0.0", "--port", "3000"]
+# Start the application
+CMD ["node_modules/.bin/vite", "--host", "0.0.0.0", "--port", "3000"]
