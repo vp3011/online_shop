@@ -1,23 +1,22 @@
-# Using an official Node runtime as a parent image
+
+
+
+
+
+# Pull base image
 FROM node:20-alpine
 
-# Set the working directory in the container
+# Set working directory
 WORKDIR /app
 
-#This will copy package.json and package-lock.json.
-COPY package*.json ./
-
-#RUN command will help you install the required packages
-RUN npm install
-
-#Copy will help you bundle the  app source inside the Docker image
+# Copy app source code
 COPY . .
 
-#To start the dev Server 
-RUN npm run build
+# Install dependencies
+RUN npm install
 
-# This will make port 3000 available to the world outside this container
+# Expose the port used by Vite
 EXPOSE 3000
 
-# Help you run  the app when the container launches
-CMD ["npm", "run", "preview","--","--port","3000","--host"]
+# Run the development server
+CMD ["npm", "run", "dev"]
