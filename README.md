@@ -123,21 +123,21 @@ docker logs online-shop-app
 
 Follow these steps to submit your contributions:
 
-Fork the repository & clone it:
+1.Fork the repository & clone it:
 
 git clone https://github.com/vp3011/online_shop.git
 
-Create a feature branch:
+2.Create a feature branch:
 
 git checkout -b feature/your-feature
 
-Commit changes using Conventional Commits:
+3.Commit changes using Conventional Commits:
 
 git commit -m "feat: add user authentication"
 
-Push to your branch:
+4.Push to your branch:
 
 git push origin feature/your-feature
 
-Create a Pull Request (PR) 🚀
+5.Create a Pull Request (PR) 🚀
 
