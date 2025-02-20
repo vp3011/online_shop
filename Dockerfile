@@ -28,8 +28,5 @@ COPY --from=builder /app /app
 # Expose port 3000 for the app
 EXPOSE 3000
 
-# Run as a non-root user for better security
-USER node
-
 # Start the application
 CMD ["node_modules/.bin/vite", "--host", "0.0.0.0", "--port", "3000"]
