@@ -119,25 +119,33 @@ docker logs online-shop-app
 ```
 
 ---
-🤝 For Submission
 
-Follow these steps to submit your contributions:
+## 🎯 Next Steps  
+- **Want to use `docker-compose`?** Let me know, and I’ll create a `docker-compose.yml` file!  
+- **Need database integration?** PostgreSQL, MySQL, or MongoDB support can be added.  
+- **Looking for a CI/CD pipeline?** I can help with GitHub Actions or Docker Hub auto-deployment!  
 
-1.Fork the repository & clone it:
+---
 
-git clone https://github.com/vp3011/online_shop.git
+## 🤝 For Submission  
+### Follow these steps to submit your contributions:  
+1. **Fork the repository** & clone it:  
+   ```bash
+   git clone https://github.com/vp3011/online_shop.git
+   ```  
+2. **Create a feature branch:**  
+   ```bash
+   git checkout -b feature/your-feature
+   ```  
+3. **Commit changes using Conventional Commits:**  
+   ```bash
+   git commit -m "feat: add user authentication"
+   ```  
+4. **Push to your branch:**  
+   ```bash
+   git push origin feature/your-feature
+   ```  
+5. **Create a Pull Request (PR) 🚀**  
 
-2.Create a feature branch:
-
-git checkout -b feature/your-feature
-
-3.Commit changes using Conventional Commits:
-
-git commit -m "feat: add user authentication"
-
-4.Push to your branch:
-
-git push origin feature/your-feature
-
-5.Create a Pull Request (PR) 🚀
+--- 
 
