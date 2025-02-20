@@ -118,14 +118,6 @@ If the container is **not running**, check the logs using:
 docker logs online-shop-app
 ```
 
----
-
-## 🎯 Next Steps  
-- **Want to use `docker-compose`?** Let me know, and I’ll create a `docker-compose.yml` file!  
-- **Need database integration?** PostgreSQL, MySQL, or MongoDB support can be added.  
-- **Looking for a CI/CD pipeline?** I can help with GitHub Actions or Docker Hub auto-deployment!  
-
----
 
 ## 🤝 For Submission  
 ### Follow these steps to submit your contributions:  
