@@ -1,29 +1,40 @@
-# Online Shop 🛍️ for Hackathon Phase 1 - Submission
+# 🎁 Online Shop for Hackathon Phase 1 - Submission  
 
-Welcome to the Online Shop project! This is a modern e-commerce platform built using Vite, Node.js, and Docker.
+Welcome to the **Online Shop** project! This is a modern **e-commerce platform** built using **Vite, Node.js, and Docker**.
 
-# Features
-- 🛒 *E-commerce Platform* – A fully functional online-shop app 
-- ⚡ *Built with Vite* – For Fast development
-- 🐳 *Dockerized with a Lightweight Image*– Uses Distrolessor image which provides security & performance  
-- 📡 *Exposed on Port 3000* – For deploy on any server
+---
 
-1️⃣ Prerequisites
-Ensure you have the following installed:
+## 🚀 Features  
+- 🛒 **E-commerce Platform** – A fully functional online shop app  
+- ⚡ **Built with Vite** – Ensures fast development and hot reloading  
+- 🐳 **Dockerized with a Lightweight Image** – Uses **Distroless** for security & performance  
+- 📱 **Exposed on Port 3000** – Ready for deployment on any server  
 
-Docker (for containerized setup)
-Node.js v16+ (if running locally)
-Git (for cloning the repository)
+---
 
-2️⃣ Clone the Repository
+## 🔧 Prerequisites  
+Ensure you have the following installed before running the project:  
+- **Docker** (for containerized setup)  
+- **Node.js v16+** (if running locally)  
+- **Git** (for cloning the repository)  
+
+---
+
+## 📂 Clone the Repository  
+Run the following commands:  
+
+```bash
 git clone https://github.com/vp3011/online_shop.git
 ls
 cd online_shop
+```
 
 ---
-🛠 Creating the Dockerfile for our project
-Before building the Docker image, create a Dockerfile in the root of the project with the following content:
 
+## 🛠 Creating the `Dockerfile`  
+Before building the Docker image, create a `Dockerfile` in the root directory with the following content:  
+
+```dockerfile
 # Stage 1: Build using Node.js with Alpine
 FROM node:18-alpine as builder
 
@@ -56,22 +67,66 @@ EXPOSE 3000
 
 # Start the application
 CMD ["node_modules/.bin/vite", "--host", "0.0.0.0", "--port", "3000"]
+```
+
 ---
-🛠 Creating the .dockerignore file to prevents unnecessary files from being copied into the image for our project
+
+## 🛠 Creating `.dockerignore`  
+To prevent unnecessary files from being copied into the image, add the following to `.dockerignore`:  
+
+```
 node_modules
 .git
 .env
+```
+
 ---
 
-🐳 build an image & Running with Docker
-3️⃣ Build and Run the Container
-- Step 1: Build the Docker Image
+## 🐳 Build and Run with Docker  
+
+### **3️⃣ Build and Run the Container**  
+#### **Step 1: Build the Docker Image**  
+```bash
 docker build -t online-shop:latest .
-- Step 2: List All Docker Images
-docker images 
-- Step 3: Run the Container
-docker run -d -p 3000:3000 -- name online-shop-app online_shop:latest
-- Step 4: Check Running Containers
+```
+
+#### **Step 2: List All Docker Images**  
+```bash
+docker images
+```
+
+#### **Step 3: Run the Container**  
+```bash
+docker run -d -p 3000:3000 --name online-shop-app online-shop:latest
+```
+
+#### **Step 4: Check Running Containers**  
+```bash
 docker ps
-4️⃣ Verify if the Container is Running
+```
+
+---
+
+## **4️⃣ Verify if the Container is Running**  
+Run the following command to check if the container is running properly:  
+```bash
 docker ps
+```
+
+If the container is **not running**, check the logs using:  
+```bash
+docker logs online-shop-app
+```
+
+---
+
+## 🎯 Next Steps  
+- **Want to use `docker-compose`?** Let me know, and I’ll create a `docker-compose.yml` file!  
+- **Need database integration?** PostgreSQL, MySQL, or MongoDB support can be added.  
+- **Looking for a CI/CD pipeline?** I can help with GitHub Actions or Docker Hub auto-deployment!  
+
+---
+
+### 🔥 **Need Help?**  
+If you run into any issues, feel free to ask! 🚀🔥  
+
