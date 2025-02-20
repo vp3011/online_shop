@@ -119,14 +119,25 @@ docker logs online-shop-app
 ```
 
 ---
+🤝 For Submission
 
-## 🎯 Next Steps  
-- **Want to use `docker-compose`?** Let me know, and I’ll create a `docker-compose.yml` file!  
-- **Need database integration?** PostgreSQL, MySQL, or MongoDB support can be added.  
-- **Looking for a CI/CD pipeline?** I can help with GitHub Actions or Docker Hub auto-deployment!  
+Follow these steps to submit your contributions:
 
----
+Fork the repository & clone it:
 
-### 🔥 **Need Help?**  
-If you run into any issues, feel free to ask! 🚀🔥  
+git clone https://github.com/vp3011/online_shop.git
+
+Create a feature branch:
+
+git checkout -b feature/your-feature
+
+Commit changes using Conventional Commits:
+
+git commit -m "feat: add user authentication"
+
+Push to your branch:
+
+git push origin feature/your-feature
+
+Create a Pull Request (PR) 🚀
 
