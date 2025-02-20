@@ -1,24 +1,34 @@
-version: "3.8"
 
+# Use Docker Compose version 3.8
+version: '3.8'
+
+# Define services (containers) to run
 services:
+  # Define the 'app' service
   app:
-    image: prashantsri3/online-shop  
+    # Build configuration for the app service
+    build:
+      # Use the current directory as the build context
+      context: .
+      # Specify the Dockerfile to use for building the image
+      dockerfile: Dockerfile
+
+    # Map ports between the host and the container
     ports:
-      - "80:80"  # Map container port 80 to host port 80
-    restart: always  # Ensure the container restarts on failure
-    networks:
-      - online_shop_network  # Connect app to the network
+      # Map port 3000 on the host to port 3000 in the container
+      - "3000:5173"
+
+    # Set environment variables inside the container
+    environment:
+      # Set NODE_ENV to production for optimized builds
+      - NODE_ENV=production
+
+    # Configure volumes for code sharing and persistence
     volumes:
-      - nginx_static:/usr/share/nginx/html 
+      # Mount the current directory to /app in the container for live code updates
+      - .:/app
+      # Ensure node_modules inside the container isn't overwritten by the host
+      - /app/node_modules
 
-
-
-
-
-
-networks:
-  online_shop_network:  # Define a custom network
-    driver: bridge
-
-volumes:
-  nginx_static:
+    # Override the default command and run the app in development mode
+    command: ["npm", "run", "dev"]
